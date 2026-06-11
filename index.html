@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nima Zare | AI Researcher - 3D Vision & Multimodal AI</title>
+    <meta name="description" content="Personal website of Nima Zare – MSc in AI at Sharif University, researcher in 3D Vision-Language Models, seeking PhD opportunities in Computer Vision & Multimodal AI.">
+    <meta name="keywords" content="3D Vision-Language Models, Domain Adaptation, Few-Shot Learning, Multimodal AI, Computer Vision, Deep Learning, Nima Zare, Sharif University">
+    <meta name="author" content="Nima Zare">
+    <!-- Google Fonts & Simple CSS Reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        /* header section */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+        .header .tagline {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+            border-left: 3px solid #38bdf8;
+            padding-left: 1rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: #b9e0ff;
+            text-decoration: none;
+            border-bottom: 1px dotted #b9e0ff;
+        }
+        .contact-info a:hover {
+            color: white;
+            border-bottom-color: white;
+        }
+        /* main grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        /* sidebar */
+        .sidebar {
+            border-right: 1px solid #e2e8f0;
+            padding-right: 2rem;
+        }
+        .sidebar section {
+            margin-bottom: 2rem;
+        }
+        .sidebar h2, .main-content h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #334155;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.4rem;
+        }
+        .education-item, .honor-item {
+            margin-bottom: 1rem;
+        }
+        .edu-title {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .edu-meta {
+            font-size: 0.8rem;
+            color: #475569;
+            margin: 0.2rem 0;
+        }
+        .gpa {
+            font-weight: 600;
+            color: #0f172a;
+        }
+        .honor-item li, .skill-list li {
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+        }
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skill-list li {
+            background: #f1f5f9;
+            margin-bottom: 0.5rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 0.4rem;
+            font-size: 0.8rem;
+        }
+        .main-content h2 {
+            margin-top: 1rem;
+        }
+        .main-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .research-item, .project-item, .teaching-item {
+            margin-bottom: 1.2rem;
+        }
+        .research-title, .project-title {
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .project-venue {
+            font-size: 0.8rem;
+            font-weight: normal;
+            color: #3b82f6;
+        }
+        .research-desc, .project-desc {
+            font-size: 0.9rem;
+            color: #1e293b;
+            margin-top: 0.2rem;
+            padding-left: 0.5rem;
+            border-left: 2px solid #cbd5e1;
+        }
+        .award-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .award-list li {
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .interest-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin: 0.2rem 0.2rem;
+            color: #0369a1;
+        }
+        footer {
+            background: #f1f5f9;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.8rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+        }
+        @media (max-width: 800px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .sidebar {
+                border-right: 0;
+                padding-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Nima Zare</h1>
+        <div class="tagline">MSc in Artificial Intelligence @ Sharif University<br>Researcher: 3D Vision-Language Models · Domain Adaptation · Multimodal AI</div>
+        <div class="contact-info">
+            <span>📍 Tehran, Iran</span>
+            <span>📧 nima.zare@example.com</span>   <!-- جایگزین با ایمیل واقعی خود کنید -->
+            <span>🔗 <a href="https://github.com/nima-zare" target="_blank">github.com/nima-zare</a></span>
+            <span>🔗 <a href="#">Google Scholar</a> (soon)</span>
+        </div>
+    </div>
+    <div class="main-grid">
+        <!-- ستون چپ (اطلاعات جانبی) -->
+        <div class="sidebar">
+            <section>
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="edu-title">M.Sc. Computer Engineering (AI)</div>
+                    <div class="edu-meta">Sharif University of Technology | 2025 – Present</div>
+                    <div class="gpa">GPA: 18.07/20</div>
+                    <div class="edu-meta">Relevant: Advanced 3D CV (18.7), NLP (18.0), Advanced AI (17.5)</div>
+                </div>
+                <div class="education-item">
+                    <div class="edu-title">B.Sc. Computer Engineering</div>
+                    <div class="edu-meta">Ferdowsi University of Mashhad | 2020 – 2025</div>
+                    <div class="gpa">GPA: 17.73/20</div>
+                    <div class="edu-meta">Thesis: 20.00 · Data Mining (20.00) · Algorithm Design (20.00)</div>
+                </div>
+            </section>
+            <section>
+                <h2>Honors & Awards</h2>
+                <ul class="award-list">
+                    <li>🏅 Ranked 6th – 29th Iranian Student Scientific Olympiad (2024)</li>
+                    <li>🏅 Ranked 8th nationally – Iran M.Sc. Entrance Exam (Computer Engineering, 2025)</li>
+                    <li>🏅 Ranked 18th – ICPC Asia Regional Contest, Tehran site (2023)</li>
+                    <li>🏅 1st Place National – Khwarizmi Youth Festival (age 13, 2015)</li>
+                    <li>🏆 1st Place – SPACE 7 programming contest (2025)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Research Interests</h2>
+                <div>
+                    <span class="interest-badge">3D Vision-Language Models</span>
+                    <span class="interest-badge">Domain Adaptation</span>
+                    <span class="interest-badge">Few-Shot Learning</span>
+                    <span class="interest-badge">Parameter-Efficient Fine-Tuning</span>
+                    <span class="interest-badge">Multimodal Learning</span>
+                    <span class="interest-badge">Diffusion Models</span>
+                </div>
+            </section>
+            <section>
+                <h2>Technical Skills</h2>
+                <ul class="skill-list">
+                    <li>Python / PyTorch / Open3D</li>
+                    <li>Scikit-learn / NumPy / Pandas</li>
+                    <li>OpenCV / Hugging Face</li>
+                    <li>C++ / Git / Linux / LaTeX</li>
+                    <li>3D Vision-Language Models (3D VLM)</li>
+                    <li>Diffusion Models / GANs</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Languages</h2>
+                <p>Persian (Native) · English (Advanced, C1)</p>
+            </section>
+        </div>
+        
+        <!-- ستون راست (تجربیات و پروژه‌ها) -->
+        <div class="main-content">
+            <section>
+                <h2>Research Experience</h2>
+                <div class="research-item">
+                    <div class="research-title">Research Assistant @ Image Processing Lab, Sharif UT</div>
+                    <div class="research-desc">Working with Dr. Shohreh Kasaei on 3D Vision-Language Models (3D VLMs). Current focus: parameter-efficient adaptation methods for few-shot domain adaptation in 3D scenes.</div>
+                </div>
+            </section>
+            <section>
+                <h2>Selected Projects</h2>
+                <div class="project-item">
+                    <div class="project-title">🔹 Enhancing Zero-Shot 3D Point Cloud Classification <span class="project-venue">(Advanced 3D CV)</span></div>
+                    <div class="project-desc">Improved ScanObjectNN classification accuracy by <strong>11%</strong> over PointCLIP v2 baseline via graph attention aggregation.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">🔹 Vehicle License Plate Enhancement using GANs <span class="project-venue">(B.Sc. Thesis)</span></div>
+                    <div class="project-desc">Developed two-stage GAN-CRNN pipeline for low-quality license plate enhancement.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">🔹 Improving Masked Diffusion via Confidence-Weighted Sampling <span class="project-venue">(NLP Course)</span></div>
+                    <div class="project-desc">Reduced MDLM generation perplexity while preserving lexical diversity.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">🔹 Improving DDIM via Rejection Sampling <span class="project-venue">(Deep Learning)</span></div>
+                    <div class="project-desc">Integrated classifier-based rejection sampling into DDIM, achieving better FID scores.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">🔹 Survey on Recursive Reasoning Models <span class="project-venue">(Advanced AI)</span></div>
+                    <div class="project-desc">Comprehensive survey of recursive reasoning and test-time scaling in LLMs.</div>
+                </div>
+            </section>
+            <section>
+                <h2>Teaching & Work Experience</h2>
+                <div class="teaching-item"><strong>Teaching Assistant</strong> – Ferdowsi University of Mashhad (Databases, Algorithm Design, Data Structures)</div>
+                <div class="teaching-item"><strong>IT Intern</strong> – Day Insurance (2023): stock prediction feasibility, SMS analytics tool.</div>
+            </section>
+            <section>
+                <h2>Graduate Coursework Highlights</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem;">
+                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Advanced 3D CV (18.7)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">NLP (18.0)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Advanced AI (17.5)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Computer Vision (in progress)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Image Processing (in progress)</span>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">📘 B.Sc. core: Data Mining (20), Algorithm Design (20), Applied Linear Algebra (20), Deep Learning (16.5)</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        🎯 Actively seeking PhD opportunities in Computer Vision / Multimodal AI (Fall 2027) – open to collaboration.
+        <br>Last updated: June 2026
+    </footer>
+</div>
+</body>
+</html>
