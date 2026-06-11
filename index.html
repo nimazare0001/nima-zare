@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nima Zare | AI Researcher - 3D Vision & Multimodal AI</title>
-    <meta name="description" content="Personal website of Nima Zare – MSc in AI at Sharif University, researcher in 3D Vision-Language Models, seeking PhD opportunities in Computer Vision & Multimodal AI.">
-    <meta name="keywords" content="3D Vision-Language Models, Domain Adaptation, Few-Shot Learning, Multimodal AI, Computer Vision, Deep Learning, Nima Zare, Sharif University">
-    <meta name="author" content="Nima Zare">
-    <!-- Google Fonts & Simple CSS Reset -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <title>Nima Zare | 3D Vision-Language Models Researcher</title>
+    <meta name="description" content="Nima Zare - MSc in AI at Sharif University, research in 3D VLMs, domain adaptation, and multimodal AI. Seeking PhD opportunities.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -17,66 +15,105 @@
         }
         body {
             font-family: 'Inter', sans-serif;
-            background: #f8fafc;
-            color: #0f172a;
-            line-height: 1.5;
-            padding: 2rem 1rem;
+            background: linear-gradient(145deg, #eef2ff 0%, #d9e2ef 100%);
+            color: #0a0c10;
+            padding: 2rem 1.5rem;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            background: white;
+            background: #ffffff;
             border-radius: 2rem;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
             overflow: hidden;
+            transition: all 0.2s;
         }
-        /* header section */
+        /* Header with profile photo */
         .header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: white;
-            padding: 2.5rem 2rem;
+            background: linear-gradient(105deg, #0f172a 0%, #1e2a3e 100%);
+            padding: 2rem 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
         }
-        .header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+        .header-text {
+            flex: 2;
+        }
+        .header-text h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
             letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #ffffff, #a5f3fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             margin-bottom: 0.25rem;
         }
-        .header .tagline {
+        .header-text .tagline {
             font-size: 1.2rem;
             font-weight: 400;
-            opacity: 0.9;
-            margin-top: 0.5rem;
+            color: #cbd5e6;
             border-left: 3px solid #38bdf8;
             padding-left: 1rem;
+            margin-top: 0.5rem;
         }
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
+            gap: 1.2rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
         }
         .contact-info a {
-            color: #b9e0ff;
+            color: #90e0ff;
             text-decoration: none;
-            border-bottom: 1px dotted #b9e0ff;
+            transition: 0.2s;
         }
         .contact-info a:hover {
             color: white;
-            border-bottom-color: white;
+            text-decoration: underline;
+        }
+        .profile-photo {
+            flex-shrink: 0;
+            width: 120px;
+            height: 120px;
+            background: #facc15;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #334155;
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* if no image, show initial */
+        .profile-photo .no-img {
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
         }
         /* main grid */
         .main-grid {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 2.2fr;
             gap: 2rem;
-            padding: 2rem;
+            padding: 2rem 2rem;
         }
         /* sidebar */
         .sidebar {
-            border-right: 1px solid #e2e8f0;
-            padding-right: 2rem;
+            background: #f9fafc;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.03);
         }
         .sidebar section {
             margin-bottom: 2rem;
@@ -85,108 +122,167 @@
             font-size: 1.2rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #334155;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 0.4rem;
+            letter-spacing: 1.2px;
+            color: #0f3b5c;
+            border-left: 5px solid #f97316;
+            padding-left: 0.8rem;
+            margin-bottom: 1.2rem;
         }
-        .education-item, .honor-item {
+        .edu-item {
             margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed #e2e8f0;
         }
         .edu-title {
-            font-weight: 700;
+            font-weight: 800;
             font-size: 1rem;
         }
         .edu-meta {
             font-size: 0.8rem;
-            color: #475569;
-            margin: 0.2rem 0;
+            color: #334155;
         }
         .gpa {
-            font-weight: 600;
+            font-weight: 700;
             color: #0f172a;
-        }
-        .honor-item li, .skill-list li {
-            margin-bottom: 0.4rem;
-            font-size: 0.9rem;
+            background: #e6f0ff;
+            display: inline-block;
+            padding: 0.1rem 0.6rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            margin-top: 0.3rem;
         }
         .skill-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        .skill-list li {
-            background: #f1f5f9;
-            margin-bottom: 0.5rem;
-            padding: 0.3rem 0.6rem;
-            border-radius: 20px;
-            display: inline-block;
-            margin-right: 0.4rem;
-            font-size: 0.8rem;
-        }
-        .main-content h2 {
-            margin-top: 1rem;
-        }
-        .main-content h2:first-of-type {
-            margin-top: 0;
-        }
-        .research-item, .project-item, .teaching-item {
-            margin-bottom: 1.2rem;
-        }
-        .research-title, .project-title {
-            font-weight: 700;
-            font-size: 1rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: baseline;
+            gap: 0.5rem;
+            list-style: none;
         }
-        .project-venue {
-            font-size: 0.8rem;
-            font-weight: normal;
-            color: #3b82f6;
+        .skill-list li {
+            background: #e2e8f0;
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
         }
-        .research-desc, .project-desc {
-            font-size: 0.9rem;
-            color: #1e293b;
-            margin-top: 0.2rem;
-            padding-left: 0.5rem;
-            border-left: 2px solid #cbd5e1;
+        .interest-badge {
+            display: inline-block;
+            background: #fff0e0;
+            padding: 0.2rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin: 0.2rem;
+            font-weight: 500;
+            color: #b45309;
+        }
+        /* Awards section - BOLD & HIGHLIGHT */
+        .awards-section {
+            background: linear-gradient(120deg, #fffbeb, #fff7e6);
+            border-radius: 1rem;
+            padding: 0.8rem 1rem;
+            margin-top: 0.5rem;
+            border: 1px solid #fed7aa;
         }
         .award-list {
             list-style: none;
             padding-left: 0;
         }
         .award-list li {
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
+            margin-bottom: 0.7rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1e293b;
         }
-        .interest-badge {
-            display: inline-block;
-            background: #e0f2fe;
-            padding: 0.2rem 0.7rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
+        .award-list li i {
+            color: #f59e0b;
+            width: 1.2rem;
+        }
+        /* download buttons */
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #1e293b;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #f97316;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #f97316;
+            color: #f97316;
+        }
+        .btn-outline:hover {
+            background: #f97316;
+            color: white;
+        }
+        /* projects */
+        .project-item, .research-item {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: 0.1s;
+            border: 1px solid #eef2ff;
+        }
+        .project-title {
+            font-weight: 800;
+            font-size: 0.95rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project-venue {
+            font-size: 0.7rem;
+            background: #f1f5f9;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
             font-weight: 500;
-            margin: 0.2rem 0.2rem;
-            color: #0369a1;
+        }
+        .research-desc, .project-desc {
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            color: #2d3a4b;
         }
         footer {
-            background: #f1f5f9;
+            background: #0f172a;
+            color: #94a3b8;
             text-align: center;
             padding: 1.5rem;
             font-size: 0.8rem;
-            color: #475569;
-            border-top: 1px solid #e2e8f0;
         }
         @media (max-width: 800px) {
             .main-grid {
                 grid-template-columns: 1fr;
-                gap: 1rem;
+                padding: 1rem;
             }
-            .sidebar {
-                border-right: 0;
-                padding-right: 0;
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-text .tagline {
+                border-left: none;
+                padding-left: 0;
+                text-align: center;
             }
         }
     </style>
@@ -194,125 +290,153 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>Nima Zare</h1>
-        <div class="tagline">MSc in Artificial Intelligence @ Sharif University<br>Researcher: 3D Vision-Language Models · Domain Adaptation · Multimodal AI</div>
-        <div class="contact-info">
-            <span>📍 Tehran, Iran</span>
-            <span>📧 nima.zare@example.com</span>   <!-- جایگزین با ایمیل واقعی خود کنید -->
-            <span>🔗 <a href="https://github.com/nima-zare" target="_blank">github.com/nima-zare</a></span>
-            <span>🔗 <a href="#">Google Scholar</a> (soon)</span>
+        <div class="header-text">
+            <h1>Nima Zare</h1>
+            <div class="tagline">MSc in AI @ Sharif University of Technology<br>3D Vision-Language Models · Few-Shot Domain Adaptation · Multimodal AI</div>
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Tehran, Iran</span>
+                <span><i class="fas fa-envelope"></i> nima.zare@sharif.edu</span>
+                <span><i class="fab fa-github"></i> <a href="#">github.com/nima-zare</a></span>
+                <span><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/nima-zare</a></span>
+            </div>
+        </div>
+        <div class="profile-photo">
+            <!-- Replace 'your-photo.jpg' with actual image URL or use placeholder -->
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Nima Zare photo placeholder">
+            <!-- برای عکس واقعی خود: مسیر فایل را مثلاً "profile.jpg" قرار دهید و آن را در مخزن گیت‌هاب آپلود کنید -->
         </div>
     </div>
+
     <div class="main-grid">
-        <!-- ستون چپ (اطلاعات جانبی) -->
+        <!-- SIDEBAR (Left) -->
         <div class="sidebar">
             <section>
-                <h2>Education</h2>
-                <div class="education-item">
-                    <div class="edu-title">M.Sc. Computer Engineering (AI)</div>
-                    <div class="edu-meta">Sharif University of Technology | 2025 – Present</div>
-                    <div class="gpa">GPA: 18.07/20</div>
-                    <div class="edu-meta">Relevant: Advanced 3D CV (18.7), NLP (18.0), Advanced AI (17.5)</div>
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="edu-item">
+                    <div class="edu-title">M.Sc. Artificial Intelligence</div>
+                    <div class="edu-meta">Sharif University of Technology | 2025–Present</div>
+                    <span class="gpa">GPA: 18.07/20</span>
+                    <div class="edu-meta">Relevant: Adv. 3D CV (18.7), NLP (18.0), Adv. AI (17.5)</div>
                 </div>
-                <div class="education-item">
+                <div class="edu-item">
                     <div class="edu-title">B.Sc. Computer Engineering</div>
-                    <div class="edu-meta">Ferdowsi University of Mashhad | 2020 – 2025</div>
-                    <div class="gpa">GPA: 17.73/20</div>
-                    <div class="edu-meta">Thesis: 20.00 · Data Mining (20.00) · Algorithm Design (20.00)</div>
+                    <div class="edu-meta">Ferdowsi University of Mashhad | 2020–2025</div>
+                    <span class="gpa">GPA: 17.73/20</span>
+                    <div class="edu-meta">Thesis: 20 · Data Mining: 20 · Algorithm: 20</div>
                 </div>
             </section>
+
+            <!-- HONORS & AWARDS - BOLD & HIGHLIGHTED -->
             <section>
-                <h2>Honors & Awards</h2>
-                <ul class="award-list">
-                    <li>🏅 Ranked 6th – 29th Iranian Student Scientific Olympiad (2024)</li>
-                    <li>🏅 Ranked 8th nationally – Iran M.Sc. Entrance Exam (Computer Engineering, 2025)</li>
-                    <li>🏅 Ranked 18th – ICPC Asia Regional Contest, Tehran site (2023)</li>
-                    <li>🏅 1st Place National – Khwarizmi Youth Festival (age 13, 2015)</li>
-                    <li>🏆 1st Place – SPACE 7 programming contest (2025)</li>
+                <h2><i class="fas fa-trophy"></i> Honors & Awards</h2>
+                <div class="awards-section">
+                    <ul class="award-list">
+                        <li><i class="fas fa-medal"></i> <strong>Ranked 6th</strong> – 29th Iranian Student Scientific Olympiad (2024)</li>
+                        <li><i class="fas fa-chart-line"></i> <strong>Ranked 8th nationally</strong> – Iran M.Sc. Entrance Exam (Computer Eng., 2025)</li>
+                        <li><i class="fas fa-code-branch"></i> <strong>Ranked 18th</strong> – ICPC Asia Regional Contest, Tehran site (2023)</li>
+                        <li><i class="fas fa-award"></i> <strong>1st Place National</strong> – Khwarizmi Youth Festival (2015, age 13)</li>
+                        <li><i class="fas fa-gamepad"></i> <strong>1st Place</strong> – SPACE 7 programming contest (2025)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Download CV & Transcript -->
+            <section>
+                <h2><i class="fas fa-download"></i> Documents</h2>
+                <div class="download-buttons">
+                    <a href="#" class="btn" id="downloadCV"><i class="fas fa-file-pdf"></i> Download CV (PDF)</a>
+                    <a href="#" class="btn btn-outline" id="downloadTranscript"><i class="fas fa-scroll"></i> Transcript (PDF)</a>
+                </div>
+                <p style="font-size: 0.7rem; margin-top: 0.5rem;">⚠️ Place your actual PDFs: rename as `CV_Nima_Zare.pdf` and `Transcript_Nima_Zare.pdf` in the repo root, then update links below.</p>
+            </section>
+
+            <section>
+                <h2><i class="fas fa-microchip"></i> Skills</h2>
+                <ul class="skill-list">
+                    <li>PyTorch</li><li>Open3D</li><li>HuggingFace</li><li>Python</li><li>C++</li><li>Diffusion Models</li><li>3D VLMs</li><li>Git/Linux</li>
                 </ul>
             </section>
             <section>
                 <h2>Research Interests</h2>
                 <div>
-                    <span class="interest-badge">3D Vision-Language Models</span>
+                    <span class="interest-badge">3D VLMs</span>
                     <span class="interest-badge">Domain Adaptation</span>
                     <span class="interest-badge">Few-Shot Learning</span>
-                    <span class="interest-badge">Parameter-Efficient Fine-Tuning</span>
+                    <span class="interest-badge">Parameter-Efficient Tuning</span>
                     <span class="interest-badge">Multimodal Learning</span>
-                    <span class="interest-badge">Diffusion Models</span>
                 </div>
-            </section>
-            <section>
-                <h2>Technical Skills</h2>
-                <ul class="skill-list">
-                    <li>Python / PyTorch / Open3D</li>
-                    <li>Scikit-learn / NumPy / Pandas</li>
-                    <li>OpenCV / Hugging Face</li>
-                    <li>C++ / Git / Linux / LaTeX</li>
-                    <li>3D Vision-Language Models (3D VLM)</li>
-                    <li>Diffusion Models / GANs</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Languages</h2>
-                <p>Persian (Native) · English (Advanced, C1)</p>
             </section>
         </div>
-        
-        <!-- ستون راست (تجربیات و پروژه‌ها) -->
+
+        <!-- MAIN CONTENT (Right) -->
         <div class="main-content">
             <section>
-                <h2>Research Experience</h2>
+                <h2><i class="fas fa-flask"></i> Research Experience</h2>
                 <div class="research-item">
-                    <div class="research-title">Research Assistant @ Image Processing Lab, Sharif UT</div>
-                    <div class="research-desc">Working with Dr. Shohreh Kasaei on 3D Vision-Language Models (3D VLMs). Current focus: parameter-efficient adaptation methods for few-shot domain adaptation in 3D scenes.</div>
+                    <div class="project-title">Research Assistant @ Image Processing Lab, Sharif UT</div>
+                    <div class="research-desc">Supervised by Prof. Shohreh Kasaei. Currently investigating parameter-efficient adaptation for 3D Vision-Language Models in few-shot domain adaptation scenarios. Working on novel prompt tuning and adapter modules for point cloud understanding.</div>
                 </div>
             </section>
+
             <section>
-                <h2>Selected Projects</h2>
+                <h2><i class="fas fa-code"></i> Selected Projects</h2>
                 <div class="project-item">
-                    <div class="project-title">🔹 Enhancing Zero-Shot 3D Point Cloud Classification <span class="project-venue">(Advanced 3D CV)</span></div>
-                    <div class="project-desc">Improved ScanObjectNN classification accuracy by <strong>11%</strong> over PointCLIP v2 baseline via graph attention aggregation.</div>
+                    <div class="project-title">Enhancing Zero-Shot 3D Point Cloud Classification <span class="project-venue">Adv. 3D CV</span></div>
+                    <div class="project-desc">Boosted ScanObjectNN accuracy by <strong>11%</strong> over PointCLIP v2 using graph attention aggregation and learnable prompts.</div>
                 </div>
                 <div class="project-item">
-                    <div class="project-title">🔹 Vehicle License Plate Enhancement using GANs <span class="project-venue">(B.Sc. Thesis)</span></div>
-                    <div class="project-desc">Developed two-stage GAN-CRNN pipeline for low-quality license plate enhancement.</div>
+                    <div class="project-title">Vehicle License Plate Enhancement with GANs <span class="project-venue">B.Sc. Thesis</span></div>
+                    <div class="project-desc">Two-stage GAN-CRNN pipeline from scratch for low-resolution plate enhancement.</div>
                 </div>
                 <div class="project-item">
-                    <div class="project-title">🔹 Improving Masked Diffusion via Confidence-Weighted Sampling <span class="project-venue">(NLP Course)</span></div>
-                    <div class="project-desc">Reduced MDLM generation perplexity while preserving lexical diversity.</div>
+                    <div class="project-title">Improving Masked Diffusion via Confidence-Weighted Sampling <span class="project-venue">NLP Course</span></div>
+                    <div class="project-desc">Reduced MDLM perplexity while preserving lexical diversity & fluency.</div>
                 </div>
                 <div class="project-item">
-                    <div class="project-title">🔹 Improving DDIM via Rejection Sampling <span class="project-venue">(Deep Learning)</span></div>
-                    <div class="project-desc">Integrated classifier-based rejection sampling into DDIM, achieving better FID scores.</div>
+                    <div class="project-title">DDIM with Rejection Sampling <span class="project-venue">Deep Learning</span></div>
+                    <div class="project-desc">Integrated classifier-based rejection sampling → better FID scores on CIFAR.</div>
                 </div>
                 <div class="project-item">
-                    <div class="project-title">🔹 Survey on Recursive Reasoning Models <span class="project-venue">(Advanced AI)</span></div>
-                    <div class="project-desc">Comprehensive survey of recursive reasoning and test-time scaling in LLMs.</div>
+                    <div class="project-title">Survey: Recursive Reasoning & Test-Time Scaling <span class="project-venue">Adv. AI</span></div>
+                    <div class="project-desc">Comprehensive review of recursive reasoning methods in LLMs.</div>
                 </div>
             </section>
+
             <section>
-                <h2>Teaching & Work Experience</h2>
-                <div class="teaching-item"><strong>Teaching Assistant</strong> – Ferdowsi University of Mashhad (Databases, Algorithm Design, Data Structures)</div>
-                <div class="teaching-item"><strong>IT Intern</strong> – Day Insurance (2023): stock prediction feasibility, SMS analytics tool.</div>
+                <h2><i class="fas fa-chalkboard-teacher"></i> Teaching & Work</h2>
+                <div class="project-item"><strong>Teaching Assistant</strong> – Ferdowsi University (Databases, Algorithm Design, Data Structures)<br>
+                <strong>IT Intern</strong> – Day Insurance (stock prediction feasibility, SMS analytics tool).</div>
             </section>
+
             <section>
-                <h2>Graduate Coursework Highlights</h2>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem;">
-                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Advanced 3D CV (18.7)</span>
-                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">NLP (18.0)</span>
-                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Advanced AI (17.5)</span>
-                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Computer Vision (in progress)</span>
-                    <span style="background:#eef2ff; padding:0.2rem 0.7rem; border-radius:20px;">Image Processing (in progress)</span>
+                <h2>📚 Graduate Coursework</h2>
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                    <span style="background:#eef2ff; padding:0.2rem 0.8rem; border-radius:30px;">Adv. 3D CV (18.7)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.8rem; border-radius:30px;">NLP (18.0)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.8rem; border-radius:30px;">Adv. AI (17.5)</span>
+                    <span style="background:#eef2ff; padding:0.2rem 0.8rem; border-radius:30px;">Computer Vision (IP)</span>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.85rem;">📘 B.Sc. core: Data Mining (20), Algorithm Design (20), Applied Linear Algebra (20), Deep Learning (16.5)</p>
             </section>
         </div>
     </div>
+
     <footer>
-        🎯 Actively seeking PhD opportunities in Computer Vision / Multimodal AI (Fall 2027) – open to collaboration.
-        <br>Last updated: June 2026
+        <i class="fas fa-search"></i> Actively seeking PhD positions in Computer Vision / Multimodal AI (Fall 2027) | Open to collaboration<br>
+        Last update: June 2026 | <i class="fab fa-github"></i> Hosted on GitHub Pages
     </footer>
 </div>
+
+<script>
+    // دکمه‌های دانلود: فعلاً لینک‌های نمونه. شما فایل‌های PDF خود را در مخزن قرار دهید و لینک‌ها را اصلاح کنید.
+    document.getElementById('downloadCV').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert("لطفاً فایل CV خود را با نام 'CV_Nima_Zare.pdf' در ریشه مخزن آپلود کنید، سپس لینک را در کد HTML به روز کنید.\n\nدر غیر این صورت می‌توانید از سرویس گوگل درایو لینک مستقیم بسازید.");
+        // در صورت آپلود فایل واقعی: window.location.href = "CV_Nima_Zare.pdf";
+    });
+    document.getElementById('downloadTranscript').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert("برای دانلود ریزنمرات، فایل PDF آن را در مخزن قرار دهید (مثلاً Transcript_Nima_Zare.pdf) و لینک را در کد تنظیم کنید.\n\nپیشنهاد: ریزنمرات رسمی اسکن‌شده برای اپلای دکترا بسیار مفید است.");
+    });
+</script>
 </body>
 </html>
